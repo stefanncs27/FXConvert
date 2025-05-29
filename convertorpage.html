@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convertor Valutar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="convertorstyle.css">
+</head>
+<body>
+  <header class="top-bar">
+      <img src="logo.png" alt="Siglă Convertor Valutar">
+    <div class="titlu-site">
+      <a href="index.html">FXConvert</a>
+    </div>
+    <nav class="linkuri-navigare">
+      <a href="convertorpage.html">Convertor valutar</a>
+      <a href="calculatortva.html">Calculator TVA</a>
+    </nav>
+  </header>
+
+  <div class="meniu">
+      <div class="app-details">
+        <h1 class="app-title">Convertor valutar</h1>
+      </div>
+      <label for="amount">Suma:</label>
+      <input type="number" id="amount"/>
+      <div class="dropdowns">
+        <select id="from-currency-select"></select>
+        <select id="to-currency-select"></select>
+      </div>
+      <button id="buton-conversie">Convertește</button>
+      <p id="result"></p>
+    </div>
+
+  <div class="converter-description">
+    <p>
+      Acest convertor valutar te ajută să transformi rapid sume între diferite monede internaționale,
+      folosind cursuri actualizate. Este un instrument util pentru călătorii, afaceri sau cumpărături online.
+    </p>
+    <p>
+      Pentru calcule suplimentare, cum ar fi TVA, accesează
+      <a href="calculatortva.html">Calculatorul de TVA</a>.
+    </p>
+  </div>
+
+  <footer class="subsol-site">
+    <nav class="linkuri-subsol">
+      <a href="https://www.instagram.com/cie.engineering_ulbs/?hl=en" target="_blank">Instagram CIE Engineering</a> |
+      <a href="https://scanstart.ro/" target="_blank">ScanStart</a> |
+      <a href="http://csac.ulbsibiu.ro/" target="_blank">CSAC ULBS</a>
+    </nav>
+  </footer>
+
+  <script src="currency-codes.js"></script>
+  <script src="api-key.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

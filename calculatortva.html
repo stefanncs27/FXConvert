@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator TVA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tvastyle.css">
+</head>
+<body>
+  <header class="top-bar">
+      <img src="logo.png" alt="Logo Calculator TVA">
+    <div class="titlu-site">
+      <a href="index.html">FXConvert</a>
+    </div>
+    <nav class="linkuri-navigare">
+      <a href="convertorpage.html">Convertor valutar</a>
+      <a href="calculatortva.html">Calculator TVA</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="text-align: center;">Calculator TVA</h1>
+
+    <form id="vat-calculator-form">
+      <label for="vat-rate">TVA:</label><br>
+      <select id="vat-rate" name="vat-rate"></select>
+      <label for="amount">Suma:</label><br>
+      <input type="text" id="amount" name="amount" required><br>
+      <button type="submit">Calculează</button>
+    </form>
+
+    <div id="results" style="display: none;">
+      <p>TVA: <span id="tva"></span></p>
+      <p>Total: <span id="total"></span></p>
+    </div>
+  </main>
+
+  <footer class="subsol-site">
+    <nav class="linkuri-subsol">
+      <a href="https://www.instagram.com/cie.engineering_ulbs/?hl=en" target="_blank">Instagram CIE Engineering</a> |
+      <a href="https://scanstart.ro/" target="_blank">ScanStart</a> |
+      <a href="http://csac.ulbsibiu.ro/" target="_blank">CSAC ULBS</a>
+    </nav>
+  </footer>
+
+  <script src="tvascript.js"></script>
+</body>
+</html>

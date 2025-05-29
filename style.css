@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #d0e7ff;
+}
+
+.top-bar {
+  background-color: #5c4ac7;
+  height: 80px;
+  border-bottom: 4px solid #3e2a9d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+img {
+  position: absolute;
+  left: 25px;
+  height: 70px;
+  width: 70px;
+}
+
+.titlu-site {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.titlu-site a {
+  font-size: 42px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Tahoma', sans-serif;
+  text-decoration: none;
+}
+
+.titlu-site a:hover {
+  color: #ffd700;
+}
+
+.linkuri-navigare {
+  display: flex;
+  gap: 15px;
+}
+
+.linkuri-navigare a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.linkuri-navigare a:hover {
+  background-color: #ffffff;
+  color: #5c4ac7;
+  transform: scale(1.12);
+}
+
+.subsol-site {
+  background-color: #5c4ac7;
+  color: #fff;
+  margin-top: auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-top: 4px solid #3e2a9d;
+  padding: 15px 10px;
+}
+
+.linkuri-subsol a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.curs-bnr {
+  display: flex;
+  justify-content: center;
+  margin: 32px auto;
+}
+
+.continut {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  img {
+    position: static;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .titlu-site a {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .linkuri-navigare {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .linkuri-navigare a {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .continut {
+    padding: 1rem;
+    margin: 1.5rem 1rem;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .curs-bnr {
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .subsol-site {
+    font-size: 14px;
+    padding: 10px 5px;
+  }
+}
